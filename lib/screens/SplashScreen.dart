@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zfinal/widgets/splash_contenet.dart';
 
 import '../helper/conestants.dart';
+import 'home.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splash";
@@ -80,7 +81,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       const Spacer(flex: 3),
                       ElevatedButton(
                         onPressed: () {
-                          //Navigator.pushNamed(context, SignInScreen.routeName);
+                          Navigator.pushNamed(context, HomeScreen.routeName);
                         },
                         child: const Text("Continue"),
                       ),
